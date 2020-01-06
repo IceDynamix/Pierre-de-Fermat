@@ -3,7 +3,7 @@
 mathematician of the 17th century
 did lots of cool stuff
 
-read [here on github](https://github.com/IceDynamix/Pierre-De-Fermat/blob/master/Pierre-De-Fermat.pdf) or compiled live on [overleaf](https://www.overleaf.com/read/qyhmqcthvzth)
+read [here on github](https://github.com/IceDynamix/Pierre-De-Fermat/blob/master/Pierre_de_Fermat.pdf) or compiled live on [overleaf](https://www.overleaf.com/read/qyhmqcthvzth)
 
 this paper contains:
 

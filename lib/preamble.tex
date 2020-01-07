@@ -1,57 +1,59 @@
 % PACKAGES --------------------------------------
-    \usepackage[utf8]{inputenc}
-    \usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
 
 % GENERAL --------------------------------------
 
-    \usepackage{tikz} % Drawings
-    \usepackage{wrapfig} % Inline images
-    \usepackage{amsmath,amssymb,amsthm} % Advanced math
-    \usepackage{xcolor} % Colored text
-    \usepackage{hyperref} % Clickable TOC
-    \renewcommand{\baselinestretch}{1.2} % Line height
-    \usepackage{graphicx} % Graphics *but better*
-    
-    \input{lib/glossary.tex} % Glossary
-    \input{lib/nomenclature.tex} % Nomenclature/Symbolverzeichnis
-    
+\usepackage{tikz} % Drawings
+\usepackage{wrapfig} % Inline images
+\usepackage{amsmath,amssymb,amsthm} % Advanced math
+\usepackage{xcolor} % Colored text
+\usepackage{hyperref} % Clickable TOC
+\renewcommand{\baselinestretch}{1.2} % Line height
+\usepackage{graphicx} % Graphics *but better*
+
+\graphicspath{{./img/}}
+
+\input{lib/glossary.tex} % Glossary
+\input{lib/nomenclature.tex} % Nomenclature/Symbolverzeichnis
+
 % MACROS ----------------------------------------
-    
-    % Displaystyle fractions
-    \newcommand\ddfrac[2]{\ensuremath{\frac{\displaystyle #1}{\displaystyle #2}}}
-    
+
+% Displaystyle fractions
+\newcommand\ddfrac[2]{\ensuremath{\frac{\displaystyle #1}{\displaystyle #2}}}
+
 % TIKZ ------------------------------------
-    \usepackage{pgf,tikz,pgfplots}
-    \usepackage{mathrsfs}
-    \usetikzlibrary[patterns]
-    \pgfplotsset{compat=1.15}
-    \usetikzlibrary{arrows}
-    \newcommand{\degre}{\ensuremath{^\circ}}
+\usepackage{pgf,tikz,pgfplots}
+\usepackage{mathrsfs}
+\usetikzlibrary[patterns]
+\pgfplotsset{compat=1.15}
+\usetikzlibrary{arrows}
+\newcommand{\degre}{\ensuremath{^\circ}}
 
 % GERMAN --------------------------------------
 
-    \usepackage[ngerman]{babel} % german
-    \usepackage{csquotes}
-    
-    % https://www.overleaf.com/learn/latex/Typesetting_quotations
-    % use \say{} to quote something
-    \usepackage[
-        left = \glqq{},
-        right = \grqq{},
-        leftsub = \glq{},
-        rightsub = \grq{}
-    ]{dirtytalk} % Correct quotation marks
-    
-    \newtheorem*{theorem}{Hypothese} % Rename
-    \addto\captionsngerman{%
-        \renewcommand{\abstractname}{Vorwort}
-    }
+\usepackage[ngerman]{babel} % german
+\usepackage{csquotes}
+
+% https://www.overleaf.com/learn/latex/Typesetting_quotations
+% use \say{} to quote something
+\usepackage[
+    left = \glqq{},
+    right = \grqq{},
+    leftsub = \glq{},
+    rightsub = \grq{}
+]{dirtytalk} % Correct quotation marks
+
+\newtheorem*{theorem}{Hypothese} % Rename
+\addto\captionsngerman{%
+    \renewcommand{\abstractname}{Vorwort}
+}
 
 % BIBLIOGRAPHY --------------------------------------
 
-    \usepackage[citestyle=numeric,sorting=none]{biblatex}
-    \addbibresource{lib/bib.bib}
-    
+\usepackage[backend=biber,sorting=none]{biblatex}
+\addbibresource{lib/bib.bib}
+
 % OPTIONS --------------------------------------
 
-    \input{lib/options.tex}
+\input{lib/options.tex}

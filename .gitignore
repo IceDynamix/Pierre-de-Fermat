@@ -1,3 +1,6 @@
+## Custom
+*.ist
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof

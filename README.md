@@ -31,7 +31,7 @@ everything is structured!
 * sections are in ./sections
 * ./lib contains preamble, glossary, nomenclature (symbolverzeichnis in german) and some other temporary options
 * ./img contains... well should be obvious
-  * brechung.ggb opens in [geogebra](https://www.geogebra.org/) and can export as tikz (located in brechung.txt with small edits)
+  * brechung.ggb opens in [geogebra](https://www.geogebra.org/) and can exported as tikz (located in brechung.tex with small edits)
   * factor_algorithm.nsd opens with [structorizer](https://structorizer.fisch.lu/)
 
 this project uses a package called [dirtytalk](https://www.ctan.org/pkg/dirtytalk), which is not available in miktex in the package installer (but readily available on overleaf)

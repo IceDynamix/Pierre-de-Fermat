@@ -19,7 +19,7 @@ Zur Einfachheit halber lässt sich die Bedingung \say{$p \equiv 1 \pmod{4}$} auc
     \item 7 ist \glslink{Primzahl}{prim}, kann aber nicht als $4n + 1$ dargestellt werden, daher ist 7 auch nicht als eine Summe von zwei \glslink{Quadratzahl}{Quadraten} darstellbar.
 \end{itemize}
 
-Fermat hatte behauptet, den Zwei-Quadrate-Satz mit der \glslink{Unendlicher Abstieg}{Methode des unendlichen Abstiegs} bewiesen zu haben. Eine Erklärung der Methode ist im Glossar zu finden. Er hat aber,wie man es von ihm gewohnt war, keinen Beweis niedergeschrieben. Der erste Beweis kam von Leonhard Euler in 1747, nachdem er mehrere Jahre damit verbracht hatte einen Beweis zu finden. Dieser hatte ebenfalls den \glslink{Unendlicher Abstieg}{unendlichen Abstieg} genutzt.
+Fermat hatte behauptet, den Zwei-Quadrate-Satz mit der \glslink{Unendlicher Abstieg}{Methode des unendlichen Abstiegs} bewiesen zu haben. Eine Erklärung der Methode ist im Glossar zu finden. Er hat aber,wie man es von ihm gewohnt war, keinen Beweis niedergeschrieben. Der erste Beweis kam von Leonhard Euler 1747, nachdem er mehrere Jahre damit verbracht hatte einen Beweis zu finden. Dieser hatte ebenfalls den \glslink{Unendlicher Abstieg}{unendlichen Abstieg} genutzt.
 Mittlerweile existieren verschiedene Beweise, die auf verschiedenen Konzepten basieren, darunter ein Beweis welcher gaußsche Zahlen nutzt \cite{woodbury}, oder auch ein Beweis in einem einzigen Satz. \cite{zagier}
 
 \subsubsection{Faktorisierungsmethode} \label{sec:faktorMethode}
@@ -56,19 +56,19 @@ Die Faktorisierungsmethode von Fermat findet die \Glspl{Faktor} einer \glslink{N
 
 \end{proof}
 
-Dies wird nun genutzt, es wird solange eine Zahl $y$ gesucht, bis diese eine \Gls{Quadratzahl} ist. Da jede ungerade Zahl als Differenz von zwei \glslink{Quadratzahl}{Quadraten} dargestellt werden kann und eine dann bereits gefunden wurde, lässt sich die andere leicht durch Subtraktion finden. Nun hat man zwei Faktoren $a$ und $b$ von $n$ gefunden. Da $n$ ungerade ist, müssen die beiden Faktoren auch ungerade sein, da $n$ sonst gerade wäre. Wenn $a$ oder $b$ noch keine Primzahlen sind, dann kann man die gleiche Methode nutzen, um für jeweils $a$ oder $b$ die Faktoren zu finden. So hat Fermat bereits in 1643 eine Primfaktorzerlegung von der Zahl $2.027.651.281$ durchgeführt. Auch dieser Beweis wurde von Fermat mit ins Grab genommen.
+Dies wird nun genutzt, es wird solange eine Zahl $y$ gesucht, bis diese eine \Gls{Quadratzahl} ist. Da jede ungerade Zahl als Differenz von zwei \glslink{Quadratzahl}{Quadraten} dargestellt werden kann und eine dann bereits gefunden wurde, lässt sich die andere leicht durch Subtraktion finden. Nun hat man zwei Faktoren $a$ und $b$ von $n$ gefunden. Da $n$ ungerade ist, müssen die beiden Faktoren auch ungerade sein, da $n$ sonst gerade wäre. Wenn $a$ oder $b$ noch keine Primzahlen sind, dann kann man die gleiche Methode nutzen, um für jeweils $a$ oder $b$ die Faktoren zu finden. So hat Fermat bereits 1643 eine Primfaktorzerlegung von der Zahl $2.027.651.281$ durchgeführt. Auch dieser Beweis wurde von Fermat mit ins Grab genommen.
 
 \subsubsection{Kleiner Satz} \label{sec:klSatz}
-Fermats kleiner Satz ist der zweitbekannteste von Fermats Werken, nach dem großen Satz, er wird \say{klein} genannt um ihn nicht mit dem großen zu verwechseln. Dieser wurde in 1640 in einem Brief von Fermat zu Bernard Frénicle de Bessy vorgestellt. Fermat hat den Satz als folgende Aussage vorgestellt:
+Fermats kleiner Satz ist der zweitbekannteste von Fermats Werken, nach dem großen Satz, er wird \say{klein} genannt, um ihn nicht mit dem Großen zu verwechseln. Dieser wurde 1640 in einem Brief von Fermat zu Bernard Frénicle de Bessy vorgestellt. Fermat hat den Satz als folgende Aussage vorgestellt:
 
 \begin{quote}
-    Wenn $p$ \glslink{Primzahl}{prim} und $a \nmid p$ ($a$ nicht durch $p$ teilbar ist), dann gilt
+    Wenn $p$ \glslink{Primzahl}{prim} und $a \nmid p$ ($a$ nicht durch $p$ teilbar), dann gilt
     \begin{equation} \label{eq:klSatz1}
         a^{p-1} \equiv 1 \pmod{p}
     \end{equation}
 \end{quote}
 
-Dies kann man auch als
+\noindent Dies kann man auch als
 
 \begin{quote}
     Wenn $p$ \glslink{Primzahl}{prim} und $a$ ganzzahlig, dann gilt
@@ -78,7 +78,7 @@ Dies kann man auch als
     sodass $a^p - a$ ein Mehrfaches von $p$ sein muss.
 \end{quote}
 
-formulieren, auch wenn die Anfangsbedingungen offener aussehen. Dies ist möglich, da die Formel \ref{eq:klSatz1} voraussetzt, dass $a \nmid p$. Daher muss es auch eine Zahl $b$ geben, sodass $ab \equiv 1 \pmod{p}$, da $a$ ansonsten keinen Teiler hätte. Wenn also nun $a^p \equiv a \pmod{p}$ und beide Seiten mit $b$ multipliziert, lässt sich auf beiden Seiten ein $a$ herauskürzen und es kommt $a^{p-1} \equiv 1 \pmod{p}$ heraus, welches somit äquivalent zu Formel \ref{eq:klSatz2} ist. Ein paar Beispiele:
+\noindent formulieren, auch wenn die Anfangsbedingungen offener aussehen. Dies ist möglich, da die Formel \ref{eq:klSatz1} voraussetzt, dass $a \nmid p$. Daher muss es auch eine Zahl $b$ geben, sodass $ab \equiv 1 \pmod{p}$, da $a$ ansonsten keinen Teiler hätte. Wenn also nun $a^p \equiv a \pmod{p}$ und beide Seiten mit $b$ multipliziert werden, lässt sich auf beiden Seiten ein $a$ herauskürzen und es kommt $a^{p-1} \equiv 1 \pmod{p}$ heraus, welches somit äquivalent zu Formel \ref{eq:klSatz2} ist. Ein paar Beispiele:
 
 \begin{itemize}
     \item Wenn $a=2$ und $p=5$, dann $2^{5} = 32 = 2 \cdot 16$. Damit lässt sich $2^{5}$ als ein Mehrfaches von 2 darstellen.
@@ -105,8 +105,8 @@ Allgemein formuliert bedeutet das:
 
 Dass es für $n = 2$ unendlich viele Lösungen gibt, wussten schon die Griechen. Man muss nur das Stichwort \say{Satz des Pythagoras} sagen und es sollte einem direkt die Zahlengruppe $3,4,5$ einfallen, welche für $n = 2$ die gültige Lösung $3^2 + 4^2 = 5^2$ bildet. Zwar hat Fermat nicht den gesamten Satz bewiesen, dafür aber den Fall $n = 4$ mit seiner eigen entwickelten Methode des \glslink{Unendlicher Abstieg}{unendlichen Abstiegs}, dessen Beschreibung im Glossar zu finden ist.
 
-Einfach zu verstehen wie er war, haben viele Mathematiker versucht den großen Satz von Fermat zu beweisen, jedoch sind alle am Versuch gescheitert. Über mehrere Jahrhunderte blieb die Lösung ein Mysterium. Erst 350 Jahre später hat Andrew Wiles 1995 einen kompletten Beweis des großen Satz von Fermat veröffentlicht. Dieser war schon seit seiner Kindheit, als er zehn Jahre alt war, von der Einfachheit des großen Satzes fasziniert und hat sich seitdem vorgenommen, diesen als Erstes zu beweisen. Da er aber schnell gemerkt hatte, dass es mit seinem mathematischen Wissen zu dieser Zeit nichts werden könne, hat er, erst nachdem er 33 geworden war, die Suche fortgesetzt. Nach mehr als 6 Jahren geheimgehaltener und akribischer Forschung hatte er in 1993 den Beweis vorgetragen, mit dem Titel \say{Modular Forms, Elliptic Curves and Galois Representations.}. Dieser hatte sich nicht anmerken lassen, dass es sich hierbei um den Beweis Fermats großen Satz handelt. Erst am Ende des dritten und letzten Vortrags hat er nebenbei angemerkt, dass er nun den Satz bewiesen hatte. \cite{newYorkTimes} In August wurde aber ein Fehler im Beweis entdeckt, den Wiles erst in September 1994 korrigieren konnte und Mai 1995 dann veröffentlicht hat. Für den Beweis hat er viele Preise und Auszeichnungen erhalten und er gilt als eines der wichtigsten Fortschritte der modernen Mathematik.
+Einfach zu verstehen wie er war, haben viele Mathematiker versucht den großen Satz von Fermat zu beweisen, jedoch sind alle am Versuch gescheitert. Über mehrere Jahrhunderte blieb die Lösung ein Mysterium. Erst 350 Jahre später hat Andrew Wiles 1995 einen kompletten Beweis des großen Satz von Fermat veröffentlicht. Dieser war schon seit seiner Kindheit, als er zehn Jahre alt war, von der Einfachheit des großen Satzes fasziniert und hat sich seitdem vorgenommen, diesen als Erstes zu beweisen. Da er aber schnell gemerkt hatte, dass es mit seinem mathematischen Wissen zu dieser Zeit nichts werden könne, hat er, erst nachdem er 33 geworden war, die Suche fortgesetzt. Nach mehr als 6 Jahren geheimgehaltener und akribischer Forschung hatte er 1993 den Beweis vorgetragen, mit dem Titel \say{Modular Forms, Elliptic Curves and Galois Representations.}. Dieser hatte sich nicht anmerken lassen, dass es sich hierbei um den Beweis Fermats großen Satz handelt. Erst am Ende des dritten und letzten Vortrags hat er nebenbei angemerkt, dass er nun den Satz bewiesen hatte. \cite{newYorkTimes} Im August wurde aber ein Fehler im Beweis entdeckt, den Wiles erst in September 1994 korrigieren konnte und Mai 1995 dann neu veröffentlicht hat. Für den Beweis hat er viele Preise und Auszeichnungen erhalten und er gilt als eines der wichtigsten Fortschritte der modernen Mathematik.
 
-Den großen Satz hier zu beweisen würden den kompletten Rahmen der Arbeit sprengen. Wer einen Blick in Wiles 109 Seiten langen Beweis werfen möchte, findet diesen in \cite{wilesFermat}. Der Beweis behandelt den Modularitätssatz (früher auch \say{Taniyama-Shimura-Vermutung} genannt) und elliptische Kurven. Wiles beweist den schwierigsten Teil davon, welches gleichzeitig den großen Satz impliziert. Der vollständige Beweis des Modularitätssatzes ist in 2001 gefunden worden. Ein Buch, welches den großen Satz und damit auch den Modularitätssatz weiter im Detail behandelt findet sich hier \cite{darmon}.
+Den großen Satz hier zu beweisen würden den kompletten Rahmen der Arbeit sprengen. Wer einen Blick in Wiles 109 Seiten langen Beweis werfen möchte, findet diesen in \cite{wilesFermat}. Der Beweis behandelt den Modularitätssatz (früher auch \say{Taniyama-Shimura-Vermutung} genannt) und elliptische Kurven. Wiles beweist den schwierigsten Teil davon, welches gleichzeitig den großen Satz impliziert. Der vollständige Beweis des Modularitätssatzes ist 2001 gefunden worden. Ein Buch, welches den großen Satz und damit auch den Modularitätssatz weiter im Detail behandelt findet sich hier \cite{darmon}.
 
-Der Beweis des großen Satzes wurde erst nach 6 Jahren Forschungen mit mathematischen Mitteln des 20. Jahrhunderts gefunden, daher ist man sich heutzutage einig, dass Fermat zwar behauptet hat einen Beweis gefunden zu haben, aber doch nie einen hatte oder dass sein Beweis fehlerhaft ist.
+Der Beweis des großen Satzes wurde erst nach 6 Jahren Forschungen mit mathematischen Mitteln des 20. Jahrhunderts gefunden, daher ist man sich heutzutage einig, dass Fermat zwar behauptet hat einen Beweis gefunden zu haben, aber doch nie einen hatte oder dass sein Beweis fehlerhaft war.

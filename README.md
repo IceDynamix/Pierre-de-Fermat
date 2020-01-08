@@ -34,7 +34,16 @@ everything is structured!
   * brechung.ggb opens in [geogebra](https://www.geogebra.org/) and can exported as tikz (located in brechung.tex with small edits)
   * factor_algorithm.nsd opens with [structorizer](https://structorizer.fisch.lu/)
 
-this project uses a package called [dirtytalk](https://www.ctan.org/pkg/dirtytalk), which is not available in miktex in the package installer (but readily available on overleaf)
+this project uses a package called [dirtytalk](https://www.ctan.org/pkg/dirtytalk), which is not available in miktex in the package installer (but readily available on overleaf), here are instructions on how to install it for miktex
+
+* dl zip [from](https://www.ctan.org/pkg/dirtytalk)
+* compile with `latex dirtytalk.ins`
+* make folder structure in home or root
+  * `TeXMFlocal`
+    * `\tex\latex\dirtytalk\dirtytalk.sty`
+    * `\latex\doc\dirtytalk`
+* add folder to miktex console for all users
+* refresh fndb
 
 edited using mainly overleaf and vscode with the latex-workshop extension
 

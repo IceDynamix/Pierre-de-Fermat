@@ -1,5 +1,7 @@
 # Pierre de Fermat
 
+graded 15/15
+
 french mathematician of the 17th century who did lots of cool stuff
 
 read [here on github](https://github.com/IceDynamix/Pierre-De-Fermat/blob/master/Pierre_de_Fermat.pdf) (removed overleaf link because im using a local setup now but if youre thinking about starting out with latex then *please* use overleaf)
